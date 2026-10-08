@@ -1,0 +1,31 @@
+{
+  "algorithm": "sha256",
+  "timeoutMs": 30000,
+  "attempts": 3,
+  "artifacts": [
+    {
+      "path": "public/vendor/aframe-1.5.0.min.js",
+      "url": "https://aframe.io/releases/1.5.0/aframe.min.js",
+      "bytes": 1390001,
+      "sha256": "4fe911ce356f034b05da1a00d3a205ec19c8cf9de0ea17592cc6481b2cb98afb"
+    },
+    {
+      "path": "public/vendor/mindar-image-1.2.5.prod.js",
+      "url": "https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js",
+      "bytes": 1758446,
+      "sha256": "42764d6f1b39387f5786b9c4cfbe50883e13ca3f47b42bf1e54e84510b374013"
+    },
+    {
+      "path": "public/vendor/aframe-1.5.0.LICENSE",
+      "url": "https://cdn.jsdelivr.net/npm/aframe@1.5.0/LICENSE",
+      "bytes": 1081,
+      "sha256": "62ad4012d4dca628fccc35994e4d5bbd41991225f402642e31145d97f641a9cd"
+    },
+    {
+      "path": "public/vendor/mind-ar-1.2.5.LICENSE",
+      "url": "https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/LICENSE",
+      "bytes": 1063,
+      "sha256": "4f3aa5215ac0346a823170c9f9677da25c3e8bdb8243693118a3711e157d7fff"
+    }
+  ]
+}

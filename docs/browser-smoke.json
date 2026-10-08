@@ -1,0 +1,406 @@
+{
+  "metrics": {
+    "appInitializedMs": 1585,
+    "sceneLoadedMs": 1881,
+    "renderStartMs": 1909,
+    "userStartMs": 2042,
+    "cameraRequestMs": 2045,
+    "cameraGrantedMs": 2294,
+    "arReadyMs": 12114,
+    "firstTargetMs": 12383,
+    "videoRequestMs": {
+      "0": 12384,
+      "1": 17217,
+      "2": 19654
+    },
+    "firstFrameMs": {
+      "0": 14240,
+      "1": 18890,
+      "2": 21366
+    }
+  },
+  "durations": {
+    "sceneAfterLibraryTransferMs": 1016,
+    "mindarStartToReadyMs": 10072,
+    "permissionAndCameraAcquisitionMs": 249,
+    "postCameraInitializationMs": 9820,
+    "readyToFirstTargetMs": 269
+  },
+  "resources": [
+    {
+      "url": "https://10.0.9.89:5173/vendor/aframe-1.5.0.min.js",
+      "startMs": 348,
+      "durationMs": 509,
+      "transferBytes": 1390301,
+      "encodedBytes": 1390001
+    },
+    {
+      "url": "https://10.0.9.89:5173/vendor/mindar-image-1.2.5.prod.js",
+      "startMs": 349,
+      "durationMs": 545,
+      "transferBytes": 1758746,
+      "encodedBytes": 1758446
+    },
+    {
+      "url": "https://10.0.9.89:5173/marcadores.mind",
+      "startMs": 2501,
+      "durationMs": 2522,
+      "transferBytes": 1836775,
+      "encodedBytes": 1836475
+    }
+  ],
+  "firstFrameMethod": "requestVideoFrameCallback",
+  "videos": [
+    {
+      "index": 0,
+      "active": false,
+      "currentTime": 1.300197,
+      "readyState": 4,
+      "networkState": 1,
+      "paused": true,
+      "muted": false,
+      "buffered": [
+        [
+          0,
+          20.989
+        ]
+      ]
+    },
+    {
+      "index": 1,
+      "active": false,
+      "currentTime": 0.448,
+      "readyState": 4,
+      "networkState": 1,
+      "paused": true,
+      "muted": false,
+      "buffered": [
+        [
+          0,
+          23.07
+        ]
+      ]
+    },
+    {
+      "index": 2,
+      "active": true,
+      "currentTime": 1.436053,
+      "readyState": 4,
+      "networkState": 1,
+      "paused": true,
+      "muted": false,
+      "buffered": [
+        [
+          0,
+          14.501
+        ]
+      ]
+    }
+  ],
+  "events": [
+    {
+      "ms": 1882,
+      "event": "sceneLoaded"
+    },
+    {
+      "ms": 1909,
+      "event": "renderstart"
+    },
+    {
+      "ms": 2042,
+      "event": "sound",
+      "muted": false
+    },
+    {
+      "ms": 2043,
+      "event": "mindarStart"
+    },
+    {
+      "ms": 2045,
+      "event": "cameraRequested",
+      "audio": false
+    },
+    {
+      "ms": 2294,
+      "event": "cameraGranted"
+    },
+    {
+      "ms": 12114,
+      "event": "arReady"
+    },
+    {
+      "ms": 12120,
+      "event": "startupMeasurements",
+      "sceneAfterLibraryTransferMs": 1016,
+      "mindarStartToReadyMs": 10072,
+      "permissionAndCameraAcquisitionMs": 249,
+      "postCameraInitializationMs": 9820,
+      "readyToFirstTargetMs": null
+    },
+    {
+      "ms": 12382,
+      "event": "targetFound",
+      "index": 0
+    },
+    {
+      "ms": 12384,
+      "event": "videoRequest",
+      "index": 0
+    },
+    {
+      "ms": 12675,
+      "event": "waiting",
+      "index": 0,
+      "currentTime": 0,
+      "readyState": 0,
+      "networkState": 2,
+      "muted": false,
+      "buffered": []
+    },
+    {
+      "ms": 14240,
+      "event": "firstFrame",
+      "index": 0,
+      "requestToFrameMs": 1856
+    },
+    {
+      "ms": 14254,
+      "event": "playing",
+      "index": 0,
+      "currentTime": 0,
+      "readyState": 4,
+      "networkState": 2,
+      "muted": false,
+      "buffered": [
+        [
+          0,
+          5.247
+        ]
+      ]
+    },
+    {
+      "ms": 14921,
+      "event": "targetLost",
+      "index": 0
+    },
+    {
+      "ms": 15933,
+      "event": "pause",
+      "index": 0,
+      "currentTime": 0.739528,
+      "readyState": 4,
+      "networkState": 1,
+      "muted": false,
+      "buffered": [
+        [
+          0,
+          20.989
+        ]
+      ]
+    },
+    {
+      "ms": 16633,
+      "event": "targetFound",
+      "index": 0
+    },
+    {
+      "ms": 16660,
+      "event": "waiting",
+      "index": 0,
+      "currentTime": 0.739528,
+      "readyState": 2,
+      "networkState": 1,
+      "muted": false,
+      "buffered": [
+        [
+          0,
+          20.989
+        ]
+      ]
+    },
+    {
+      "ms": 16916,
+      "event": "playing",
+      "index": 0,
+      "currentTime": 1.001373,
+      "readyState": 4,
+      "networkState": 1,
+      "muted": false,
+      "buffered": [
+        [
+          0,
+          20.989
+        ]
+      ]
+    },
+    {
+      "ms": 17190,
+      "event": "targetFound",
+      "index": 1
+    },
+    {
+      "ms": 17217,
+      "event": "videoRequest",
+      "index": 1
+    },
+    {
+      "ms": 17484,
+      "event": "pause",
+      "index": 0,
+      "currentTime": 1.300197,
+      "readyState": 4,
+      "networkState": 1,
+      "muted": false,
+      "buffered": [
+        [
+          0,
+          20.989
+        ]
+      ]
+    },
+    {
+      "ms": 17487,
+      "event": "waiting",
+      "index": 1,
+      "currentTime": 0,
+      "readyState": 0,
+      "networkState": 2,
+      "muted": false,
+      "buffered": []
+    },
+    {
+      "ms": 18890,
+      "event": "firstFrame",
+      "index": 1,
+      "requestToFrameMs": 1673
+    },
+    {
+      "ms": 19579,
+      "event": "playing",
+      "index": 1,
+      "currentTime": 0.448,
+      "readyState": 4,
+      "networkState": 2,
+      "muted": false,
+      "buffered": [
+        [
+          0,
+          1.5
+        ]
+      ]
+    },
+    {
+      "ms": 19652,
+      "event": "targetFound",
+      "index": 2
+    },
+    {
+      "ms": 19654,
+      "event": "videoRequest",
+      "index": 2
+    },
+    {
+      "ms": 19922,
+      "event": "pause",
+      "index": 1,
+      "currentTime": 0.448,
+      "readyState": 4,
+      "networkState": 1,
+      "muted": false,
+      "buffered": [
+        [
+          0,
+          23.07
+        ]
+      ]
+    },
+    {
+      "ms": 19986,
+      "event": "waiting",
+      "index": 2,
+      "currentTime": 0,
+      "readyState": 0,
+      "networkState": 2,
+      "muted": false,
+      "buffered": []
+    },
+    {
+      "ms": 21366,
+      "event": "firstFrame",
+      "index": 2,
+      "requestToFrameMs": 1712
+    },
+    {
+      "ms": 21489,
+      "event": "playing",
+      "index": 2,
+      "currentTime": 0.007718,
+      "readyState": 4,
+      "networkState": 1,
+      "muted": false,
+      "buffered": [
+        [
+          0,
+          3.709
+        ]
+      ]
+    },
+    {
+      "ms": 22770,
+      "event": "waiting",
+      "index": 2,
+      "currentTime": 0.618667,
+      "readyState": 2,
+      "networkState": 2,
+      "muted": false,
+      "buffered": [
+        [
+          0,
+          11.128
+        ]
+      ]
+    },
+    {
+      "ms": 22778,
+      "event": "sound",
+      "muted": true
+    },
+    {
+      "ms": 22849,
+      "event": "playing",
+      "index": 2,
+      "currentTime": 0.727336,
+      "readyState": 4,
+      "networkState": 1,
+      "muted": true,
+      "buffered": [
+        [
+          0,
+          12.815
+        ]
+      ]
+    },
+    {
+      "ms": 23439,
+      "event": "sound",
+      "muted": false
+    },
+    {
+      "ms": 23999,
+      "event": "pause",
+      "index": 2,
+      "currentTime": 1.436053,
+      "readyState": 4,
+      "networkState": 1,
+      "muted": false,
+      "buffered": [
+        [
+          0,
+          14.501
+        ]
+      ]
+    }
+  ],
+  "externalRequests": [],
+  "environment": "Edge headless, software WebGL, fake camera, https://10.0.9.89:5173; synthetic target events; not a mobile benchmark or audible audio test"
+}

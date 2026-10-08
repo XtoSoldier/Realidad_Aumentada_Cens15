@@ -1,0 +1,260 @@
+{
+  "method": "MP4 container metadata only; this audit does not decode or convert media",
+  "videos": [
+    {
+      "filename": "el_peaton1.mp4",
+      "bytes": 12500855,
+      "mebibytes": 11.92,
+      "fragmented": false,
+      "durationSeconds": 62.438,
+      "totalBitrateKbps": 1601.7,
+      "faststart": false,
+      "tracks": [
+        {
+          "kind": "vide",
+          "sampleEntry": "avc1",
+          "durationSeconds": 62.367,
+          "sampleCount": 1871,
+          "bitrateKbps": 1340.7,
+          "codec": "H.264",
+          "width": 1080,
+          "height": 1920,
+          "averageFps": 30
+        },
+        {
+          "kind": "soun",
+          "sampleEntry": "mp4a",
+          "durationSeconds": 62.438,
+          "sampleCount": 2927,
+          "bitrateKbps": 253.4,
+          "codec": "AAC LC",
+          "channels": 2,
+          "sampleRateHz": 48000,
+          "nonEmptyAudioTrack": true
+        }
+      ]
+    },
+    {
+      "filename": "el_peaton2.mp4",
+      "bytes": 10886480,
+      "mebibytes": 10.38,
+      "fragmented": false,
+      "durationSeconds": 62.457,
+      "totalBitrateKbps": 1394.4,
+      "faststart": false,
+      "tracks": [
+        {
+          "kind": "vide",
+          "sampleEntry": "avc1",
+          "durationSeconds": 62.4,
+          "sampleCount": 1872,
+          "bitrateKbps": 1132.9,
+          "codec": "H.264",
+          "width": 1080,
+          "height": 1920,
+          "averageFps": 30
+        },
+        {
+          "kind": "soun",
+          "sampleEntry": "mp4a",
+          "durationSeconds": 62.457,
+          "sampleCount": 2928,
+          "bitrateKbps": 253.4,
+          "codec": "AAC LC",
+          "channels": 2,
+          "sampleRateHz": 48000,
+          "nonEmptyAudioTrack": true
+        }
+      ]
+    },
+    {
+      "filename": "el_peaton3.mp4",
+      "bytes": 5772405,
+      "mebibytes": 5.5,
+      "fragmented": false,
+      "durationSeconds": 29.797,
+      "totalBitrateKbps": 1549.8,
+      "faststart": false,
+      "tracks": [
+        {
+          "kind": "vide",
+          "sampleEntry": "avc1",
+          "durationSeconds": 29.733,
+          "sampleCount": 892,
+          "bitrateKbps": 1289.6,
+          "codec": "H.264",
+          "width": 1080,
+          "height": 1920,
+          "averageFps": 30
+        },
+        {
+          "kind": "soun",
+          "sampleEntry": "mp4a",
+          "durationSeconds": 29.797,
+          "sampleCount": 1397,
+          "bitrateKbps": 253.4,
+          "codec": "AAC LC",
+          "channels": 2,
+          "sampleRateHz": 48000,
+          "nonEmptyAudioTrack": true
+        }
+      ]
+    },
+    {
+      "filename": "el_peaton.mp4",
+      "bytes": 11890634,
+      "mebibytes": 11.34,
+      "fragmented": true,
+      "durationSeconds": null,
+      "totalBitrateKbps": null,
+      "faststart": true,
+      "tracks": [
+        {
+          "kind": "vide",
+          "sampleEntry": "avc1",
+          "durationSeconds": null,
+          "sampleCount": null,
+          "bitrateKbps": null,
+          "codec": "H.264",
+          "width": 640,
+          "height": 360,
+          "averageFps": null
+        },
+        {
+          "kind": "soun",
+          "sampleEntry": "mp4a",
+          "durationSeconds": null,
+          "sampleCount": null,
+          "bitrateKbps": null,
+          "codec": "AAC LC",
+          "channels": 2,
+          "sampleRateHz": 44100,
+          "nonEmptyAudioTrack": null
+        }
+      ],
+      "limitation": "Fragment sample metadata is not inspected; duration/audio validation require ffprobe. This file is unused by the app."
+    },
+    {
+      "filename": "media/el_peaton1-fade-2s.mp4",
+      "bytes": 12469322,
+      "mebibytes": 11.89,
+      "fragmented": false,
+      "durationSeconds": 62.421,
+      "totalBitrateKbps": 1598.1,
+      "faststart": true,
+      "tracks": [
+        {
+          "kind": "vide",
+          "sampleEntry": "avc1",
+          "durationSeconds": 62.367,
+          "sampleCount": 1871,
+          "bitrateKbps": 1340.7,
+          "codec": "H.264",
+          "width": 1080,
+          "height": 1920,
+          "averageFps": 30
+        },
+        {
+          "kind": "soun",
+          "sampleEntry": "mp4a",
+          "durationSeconds": 62.421,
+          "sampleCount": 2926,
+          "bitrateKbps": 249.6,
+          "codec": "AAC LC",
+          "channels": 2,
+          "sampleRateHz": 48000,
+          "nonEmptyAudioTrack": true
+        }
+      ]
+    },
+    {
+      "filename": "media/el_peaton2-fade-2s.mp4",
+      "bytes": 10905097,
+      "mebibytes": 10.4,
+      "fragmented": false,
+      "durationSeconds": 62.443,
+      "totalBitrateKbps": 1397.1,
+      "faststart": true,
+      "tracks": [
+        {
+          "kind": "vide",
+          "sampleEntry": "avc1",
+          "durationSeconds": 62.4,
+          "sampleCount": 1872,
+          "bitrateKbps": 1132.9,
+          "codec": "H.264",
+          "width": 1080,
+          "height": 1920,
+          "averageFps": 30
+        },
+        {
+          "kind": "soun",
+          "sampleEntry": "mp4a",
+          "durationSeconds": 62.443,
+          "sampleCount": 2927,
+          "bitrateKbps": 256,
+          "codec": "AAC LC",
+          "channels": 2,
+          "sampleRateHz": 48000,
+          "nonEmptyAudioTrack": true
+        }
+      ]
+    },
+    {
+      "filename": "media/el_peaton3-fade-2s.mp4",
+      "bytes": 5783237,
+      "mebibytes": 5.52,
+      "fragmented": false,
+      "durationSeconds": 29.781,
+      "totalBitrateKbps": 1553.5,
+      "faststart": true,
+      "tracks": [
+        {
+          "kind": "vide",
+          "sampleEntry": "avc1",
+          "durationSeconds": 29.733,
+          "sampleCount": 892,
+          "bitrateKbps": 1289.6,
+          "codec": "H.264",
+          "width": 1080,
+          "height": 1920,
+          "averageFps": 30
+        },
+        {
+          "kind": "soun",
+          "sampleEntry": "mp4a",
+          "durationSeconds": 29.781,
+          "sampleCount": 1396,
+          "bitrateKbps": 256.9,
+          "codec": "AAC LC",
+          "channels": 2,
+          "sampleRateHz": 48000,
+          "nonEmptyAudioTrack": true
+        }
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "filename": "marcadores.mind",
+      "bytes": 1836475
+    },
+    {
+      "filename": "marcador1.png",
+      "bytes": 901024
+    },
+    {
+      "filename": "marcador2.png",
+      "bytes": 953858
+    },
+    {
+      "filename": "marcador3.png",
+      "bytes": 484188
+    }
+  ],
+  "pending": [
+    "ffprobe codec profile/pixel format verification",
+    "Audible/synchronized playback on phones",
+    "720p conversion quality and actual startup benchmarks"
+  ]
+}

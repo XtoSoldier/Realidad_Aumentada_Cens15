@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <title>El Peatón - Realidad aumentada</title>
+
+  <!-- A-Frame 1.5 must register systems before a-scene is parsed. -->
+  <script src="/vendor/aframe-1.5.0.min.js"></script>
+  <script src="/vendor/mindar-image-1.2.5.prod.js"></script>
+  <script type="module" src="/src/app.mjs"></script>
+
+  <style>
+    html, body { width: 100%; height: 100%; }
+    body {
+      margin: 0;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+    }
+
+    #mensaje {
+      position: fixed;
+      top: 16px;
+      left: 16px;
+      right: 16px;
+      z-index: 10;
+      padding: 12px;
+      border-radius: 8px;
+      background: rgba(0, 0, 0, 0.75);
+      color: white;
+      text-align: center;
+      pointer-events: none;
+    }
+    [hidden] { display: none !important; }
+    #inicio {
+      position: fixed; inset: 0; z-index: 20;
+      display: flex; flex-direction: column; align-items: center; overflow-y: auto;
+      background: #171717; color: white; padding: 24px;
+    }
+    #inicio section { max-width: 420px; margin: auto; flex-shrink: 0; text-align: center; }
+    button {
+      padding: 14px 20px; border: 0; border-radius: 8px;
+      font: inherit; cursor: pointer; background: #f2ce79; color: #171717;
+    }
+    button:disabled { opacity: .6; cursor: wait; }
+    #controles {
+      position: fixed; bottom: max(20px, env(safe-area-inset-bottom));
+      left: 16px; right: 16px; z-index: 15;
+      display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;
+    }
+    #diagnostico {
+      position: fixed; top: 100px; left: 12px; right: 12px; z-index: 15;
+      max-height: 35vh; overflow: auto; padding: 10px;
+      color: white; background: #000c; font-size: 11px; white-space: pre-wrap;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="inicio">
+    <section>
+      <h1>El Peatón</h1>
+      <p>Apuntá a una de las tres láminas. Cada escena reproduce su video con el audio original.</p>
+      <p>Permití el acceso a la cámara y ajustá el volumen del celular. No se utiliza el micrófono.</p>
+      <button id="comenzar" type="button" disabled>Comenzar experiencia con audio</button>
+      <p id="estadoInicio" role="status">Preparando la experiencia...</p>
+    </section>
+  </div>
+  <div id="mensaje" role="status" aria-live="polite">Preparando la experiencia...</div>
+  <div id="controles" hidden>
+    <button id="sonido" type="button" aria-pressed="false">Silenciar sonido</button>
+    <button id="reproducir" type="button" hidden>Reproducir escena con audio</button>
+    <button id="recargar" type="button" hidden>Volver a cargar</button>
+  </div>
+  <pre id="diagnostico" hidden></pre>
+  <!-- Sin src hasta la primera deteccion. No bloquean a-assets ni la camara. -->
+  <div hidden>
+    <video id="videoPeaton1" data-src="/el_peaton1.mp4" preload="none" loop playsinline webkit-playsinline crossorigin="anonymous"></video>
+    <video id="videoPeaton2" data-src="/el_peaton2.mp4" preload="none" loop playsinline webkit-playsinline crossorigin="anonymous"></video>
+    <video id="videoPeaton3" data-src="/el_peaton3.mp4" preload="none" loop playsinline webkit-playsinline crossorigin="anonymous"></video>
+  </div>
+
+  <a-scene
+    mindar-image="imageTargetSrc: /marcadores.mind; autoStart: false; maxTrack: 1; uiLoading: no; uiScanning: no; uiError: no;"
+    loading-screen="enabled: false"
+    color-space="sRGB"
+    renderer="colorManagement: true"
+    xr-mode-ui="enabled: false; enterVREnabled: false; enterAREnabled: false"
+    keyboard-shortcuts="enterVR: false; exitVR: false"
+    device-orientation-permission-ui="enabled: false"
+  >
+    <!-- Recursos que aparecerán al reconocer los marcadores. -->
+    <a-assets timeout="3000">
+      <img id="imagen1" src="/marcador1.png">
+      <img id="imagen2" src="/marcador2.png">
+      <img id="imagen3" src="/marcador3.png">
+    </a-assets>
+
+    <a-camera
+      position="0 0 0"
+      look-controls="enabled: false"
+    ></a-camera>
+
+    <!-- Primer marcador: índice 0. -->
+    <a-entity
+      mindar-image-target="targetIndex: 0"
+      data-escena="1"
+    >
+      <a-image
+        src="#imagen1"
+        position="0 0 0.01"
+        width="2"
+        height="2"
+      ></a-image>
+      <a-video
+        class="video-peaton"
+        src="#videoPeaton1"
+        position="0 0 0.02"
+        width="2"
+        height="1"
+      ></a-video>
+    </a-entity>
+
+    <!-- Segundo marcador: índice 1. -->
+    <a-entity
+      mindar-image-target="targetIndex: 1"
+      data-escena="2"
+    >
+      <a-image
+        src="#imagen2"
+        position="0 0 0.01"
+        width="1"
+        height="1"
+      ></a-image>
+      <a-video
+        class="video-peaton"
+        src="#videoPeaton2"
+        position="0 0 0.02"
+        width="1"
+        height="0.5"
+      ></a-video>
+    </a-entity>
+
+    <!-- Tercer marcador: índice 2. -->
+    <a-entity
+      mindar-image-target="targetIndex: 2"
+      data-escena="3"
+    >
+      <a-image
+        src="#imagen3"
+        position="0 0 0.01"
+        width="1"
+        height="1"
+      ></a-image>
+      <a-video
+        class="video-peaton"
+        src="#videoPeaton3"
+        position="0 0 0.02"
+        width="1"
+        height="0.5"
+      ></a-video>
+    </a-entity>
+  </a-scene>
+
+</body>
+</html>

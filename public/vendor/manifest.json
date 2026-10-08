@@ -1,0 +1,14 @@
+[
+  {
+    "filename": "aframe-1.5.0.min.js",
+    "url": "https://aframe.io/releases/1.5.0/aframe.min.js",
+    "bytes": 1390001,
+    "sha256": "4fe911ce356f034b05da1a00d3a205ec19c8cf9de0ea17592cc6481b2cb98afb"
+  },
+  {
+    "filename": "mindar-image-1.2.5.prod.js",
+    "url": "https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js",
+    "bytes": 1758446,
+    "sha256": "42764d6f1b39387f5786b9c4cfbe50883e13ca3f47b42bf1e54e84510b374013"
+  }
+]

@@ -1,0 +1,108 @@
+{
+  "fadeSeconds": 2,
+  "method": "Embedded AAC fade; compressed video stream copied; PCM windows compared with source",
+  "scenes": [
+    {
+      "scene": 1,
+      "source": "el_peaton1.mp4",
+      "output": "media/el_peaton1-fade-2s.mp4",
+      "fadeSeconds": 2,
+      "fadeStartSeconds": 60.438,
+      "sourceSha256": "5b8ff5261d0976f07cbda48ffecde779aefe7e11039bbf02ed3a17d0f8368b6a",
+      "compressedVideoUnchanged": true,
+      "sourceBytes": 12500855,
+      "outputBytes": 12469322,
+      "sourceDurationSeconds": 62.438,
+      "outputDurationSeconds": 62.421,
+      "faststart": true,
+      "audioWindows": [
+        {
+          "startSeconds": 60.688,
+          "originalRms": 0.0054087841054632655,
+          "fadedRms": 0.004433081133111424,
+          "gainRatio": 0.8196077060339105
+        },
+        {
+          "startSeconds": 61.338,
+          "originalRms": 0.005351825338064474,
+          "fadedRms": 0.002691006078755996,
+          "gainRatio": 0.5028202358579247
+        },
+        {
+          "startSeconds": 62.138,
+          "originalRms": 0.025047083476181446,
+          "fadedRms": 0.0022495459636154183,
+          "gainRatio": 0.08981269079709926
+        }
+      ]
+    },
+    {
+      "scene": 2,
+      "source": "el_peaton2.mp4",
+      "output": "media/el_peaton2-fade-2s.mp4",
+      "fadeSeconds": 2,
+      "fadeStartSeconds": 60.457,
+      "sourceSha256": "e7b54d74ca86b733b14474cc0b27cbb3725823267b5f2cf7f6d9da3a5bf45ebc",
+      "compressedVideoUnchanged": true,
+      "sourceBytes": 10886480,
+      "outputBytes": 10905097,
+      "sourceDurationSeconds": 62.457,
+      "outputDurationSeconds": 62.443,
+      "faststart": true,
+      "audioWindows": [
+        {
+          "startSeconds": 60.707,
+          "originalRms": 0.009876539477358986,
+          "fadedRms": 0.008179251868830588,
+          "gainRatio": 0.8281495646912295
+        },
+        {
+          "startSeconds": 61.357,
+          "originalRms": 0.14419485730164766,
+          "fadedRms": 0.07453779609998254,
+          "gainRatio": 0.5169240949006496
+        },
+        {
+          "startSeconds": 62.157,
+          "originalRms": 0.014400741493972356,
+          "fadedRms": 0.0014619216317261383,
+          "gainRatio": 0.1015171081529411
+        }
+      ]
+    },
+    {
+      "scene": 3,
+      "source": "el_peaton3.mp4",
+      "output": "media/el_peaton3-fade-2s.mp4",
+      "fadeSeconds": 2,
+      "fadeStartSeconds": 27.797,
+      "sourceSha256": "da1902208213a3d93970760599b2da5aee997ff62b116544323c135ad97e7861",
+      "compressedVideoUnchanged": true,
+      "sourceBytes": 5772405,
+      "outputBytes": 5783237,
+      "sourceDurationSeconds": 29.797,
+      "outputDurationSeconds": 29.781,
+      "faststart": true,
+      "audioWindows": [
+        {
+          "startSeconds": 28.047,
+          "originalRms": 0.055936592392461126,
+          "fadedRms": 0.04598259123276147,
+          "gainRatio": 0.8220484885839916
+        },
+        {
+          "startSeconds": 28.697,
+          "originalRms": 0.04555006765801556,
+          "fadedRms": 0.021563434468462598,
+          "gainRatio": 0.47340071216487045
+        },
+        {
+          "startSeconds": 29.497,
+          "originalRms": 0.023652010501085792,
+          "fadedRms": 0.0025176453825253276,
+          "gainRatio": 0.10644530123178113
+        }
+      ]
+    }
+  ]
+}
